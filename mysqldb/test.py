@@ -10,8 +10,8 @@ except (MySQLdb.Error, e):
 	try:
 		print("MySQL Error [%d]: %s" % (e.args[0], e.args[1])
 
-	except:
-		p
+	except IndexError:
+		print(MySQL Error: %s" % str(e)
 for row in rows:
 	for col in row:
 		print("%s," % col)
