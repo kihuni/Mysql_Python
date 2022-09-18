@@ -1,4 +1,4 @@
- ##MySQLdb
+ ## MySQLdb
 
 - MySQL Python is the MySQL driver for the Python language. It is broken down into two parts, a wrapper library _mysql and the DB-API 2.0 module MySQLdb.
 
