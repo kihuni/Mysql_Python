@@ -3,15 +3,9 @@ import MySQLdb
 db = MySQLdb.connect(host = 'localhost', user='stevo', passwd='password', db = 'giraffe')
 cur = db.cursor()
 
-try:
-	cur.execute("SELECT * FROM  student")
-	rows = cur.fetchall()
-except (MySQLdb.Error, e):
-	try:
-		print("MySQL Error [%d]: %s" % (e.args[0], e.args[1])
+cur.execute("SELECT * FROM  student")
+rows = cur.fetchall()
 
-	except IndexError:
-		print(MySQL Error: %s" % str(e)
 for row in rows:
 	for col in row:
 		print("%s," % col)
