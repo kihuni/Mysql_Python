@@ -1,5 +1,5 @@
-from sqlalchemy import declarative_base
-from sqlalchemy import Column, String,DataTime,Integer,create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, String, DateTime, Integer,create_engine
 from  datetime import datetime
 import os
 
@@ -12,7 +12,7 @@ Base = declarative_base()
 engine = create_engine(connection_string, echo = True)
 
 class User(Base):
-	__tablename__ = users
+	__tablename__= 'users'
 	id = Column(Integer(), primary_key=True)
 	Username = Column(String)
 	fullname = Column(String)
